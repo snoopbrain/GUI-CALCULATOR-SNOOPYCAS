@@ -175,14 +175,6 @@ looop:
     mov  al, '*'          
     call WriteChar      ; Write point on new place
  
-    ;mov eax, 0
-    ;mov al, currentX
-    ;call WriteInt
-    ;mov al, '-'
-    ;call WriteChar
-    ;mov al, currentY
-    ;call WriteInt
-    ;call Crlf
 	mov al,0
 	INVOKE GetKeyState, VK_RSHIFT
 		test al,1
@@ -475,7 +467,9 @@ DrawTitleScreen PROC									; escribe el titulo, diseño pobre xd
 DrawTitleScreen ENDP
 
 FIGGONACCI PROC
-	MOV EAX,EAX
+	MWRITE "Esta parte del codigo fue separado, de la interfaz para mayor comodidad"
+   invoke sleep,400
+   ret
 
 FIGGONACCI	ENDP
 
@@ -581,7 +575,7 @@ printbotones PROC
 		mGotoxy 32, 12									
 		mWrite	"    /    "											
 		mGotoxy 32, 19
-		mwrite "   =   "
+		mwrite  "    =    "
 										
 		
 		mGotoxy 7,  6		   							
