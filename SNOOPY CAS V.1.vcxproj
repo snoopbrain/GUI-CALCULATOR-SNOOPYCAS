@@ -17,8 +17,9 @@
     <MASM Include="..\Intel-Assembly-Language-Programming-Exercises\Intel-Assembly-Language-Programming-Exercises\7_6_GCD.asm">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
+    <MASM Include="ColourMatrix.asm" />
     <MASM Include="SNOOPY CAS.asm">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </MASM>
   </ItemGroup>
   <PropertyGroup Label="Globals">
